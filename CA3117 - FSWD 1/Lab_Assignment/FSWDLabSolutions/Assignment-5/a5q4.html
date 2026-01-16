@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var Let Const</title>
+</head>
+
+<body>
+    <script>
+        function q4() {
+            var a = 10;
+            {
+                let b = 20;
+                const c = 30;
+                alert("Block scoped variables: b=" + b + ", c=" + c);
+            }
+            alert("Global/Function scoped: a=" + a);
+        }
+        q4();
+    </script>
+</body>
+
+</html>

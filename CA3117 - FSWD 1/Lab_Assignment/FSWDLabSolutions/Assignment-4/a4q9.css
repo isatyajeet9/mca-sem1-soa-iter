@@ -1,0 +1,18 @@
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.content {
+    background-color: white;
+    padding: 15px;
+    border: 3px dashed blue;
+    font-size: 20px;
+    width: 50%;
+    margin: 0 auto;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Number</title>
+</head>
+
+<body>
+  <script>
+    function q8() {
+      let num = Number(prompt("Enter a number"));
+      let isPrime = true;
+
+      if (num <= 1) {
+        isPrime = false;
+      }
+      for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+          isPrime = false;
+          break;
+        }
+      }
+      if (isPrime) {
+        document.write(num + " is Prime.");
+      }
+
+      else {
+        document.write(num + " is not Prime.");
+      }
+    }
+    q8();
+  </script>
+</body>
+
+</html>

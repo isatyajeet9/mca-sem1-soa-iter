@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #290505;
+    border-bottom: 2px solid #ccc;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-text h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.header-text p {
+    color: #00ff15;
+    font-size: 1.1em;
+}
+
+nav {
+    background-color: #CC0000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    position: relative; 
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li:hover > a {
+    background-color: #a00000;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 150px;
+    display: none;
+    flex-direction: column; 
+    padding-left: 0;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    color: black;
+    padding: 12px 20px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+li.dropdown-parent:hover .dropdown-menu {
+    display: block;
+}
+
+.main-content {
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.notice-box h2 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f70000;
+    margin-bottom: 15px;
+}
+
+.notice-box ul {
+    list-style-position: inside;
+    padding: 20px;
+    list-style-type: disc;
+}
+
+.about-college {
+    flex: 3;
+}
+
+.about-college h2 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f70000;
+    margin-bottom: 15px;
+}
+
+.about-college p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.login-bar {
+    background-color: #ffffcc;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.login-button {
+    background-color: #e0e0e0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.login-button:hover {
+    background-color: #d0d0d0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffcc;
+    border-top: 1px solid #ddd;
+    color: #555;
+    font-size: 0.8em;
+}
+
+.footer-right {
+    text-align: right;
+}

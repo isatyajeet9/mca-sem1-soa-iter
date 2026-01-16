@@ -1,0 +1,79 @@
+Assignment 1
+Q1. How to find the default DNS Name & IP Address of your computer system?
+
+Steps to find DNS Name and IP Address:
+
+1. Press Windows + R key together
+2. Type `cmd` and press Enter to open command prompt
+3. To find DNS Name, type `hostname` and press Enter
+4. To find IP Address, type `ipconfig` and press Enter
+
+
+Q2.a. How to enable IIS for Windows?
+
+Steps to Enable IIS (Internet Information Services):
+
+1. Open Control Panel
+2. Click Programs
+3. Click on Programs & Features
+4. Click on Turn Windows features on or off
+5. Scroll down and find Internet Information Services
+6. Check the checkbox for IIS
+7. Expand IIS and check:
+   - Web Management Tools Click IIS Management Console
+   - World Wide Web Services Click Common HTTP Features
+8. Click OK and wait for installation
+
+
+
+Q2.b. Commands to Start and Stop Web Server:
+
+To start and stop the web server:
+
+1. Open command prompt as an Administrator
+2. To start the Web Server:
+   - Type: iisreset /start
+3. To stop the Web Server:
+   - Type: iisreset /stop
+
+
+Q3. Use the GET method and find the Server Response details for the "localhost"
+
+Steps:
+
+1. First We have to check, Web server is running
+2. Open a web browser
+3. Open Developer Tools by pressing F12
+4. Click on 'Network' tab
+5. In the browser's address bar, type `http://localhost` and press Enter
+6. The request for "localhost" appears in the 'Network' tab. Click on it
+7. New panel will open
+   - Click on the 'Headers' tab to see the details
+
+
+
+Q4. Use the POST method & insert key values like inputs as in a registration form to the server & check the response.
+
+Steps to use POST method in Postman:
+
+1. Download POSTMAN
+2. Open Postman
+3. Create New Request:
+   - Click on "New"
+   - Click HTTP Request
+   - Select POST method from dropdown
+4. Enter URL: `https://api.mrcapp.app/api/v1/users/register`
+5. Click on "Body" tab below the URL bar
+6. Select "raw" option
+7. Select "JSON" from the dropdown
+8. Enter the registration data in JSON format
+9. Click "Send" button
+
+Registration Form Data:
+
+json
+{
+  "email": "satyajeetnayak58@gmail.com",
+  "password": "test@9025",
+  "username": "isatyajeet"
+}

@@ -1,0 +1,25 @@
+<form onsubmit="return check()">
+<input id="u" placeholder="Username"><br>
+<input type="password" id="p" placeholder="Password"><br>
+<input type="submit">
+</form>
+
+<script>
+function check() {
+let user = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).+$/;
+let pass = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#]).+$/;
+
+if (!user.test(u.value)) {
+  alert("Invalid Username");
+  u.focus();
+  return false;
+}
+if (!pass.test(p.value)) {
+  alert("Invalid Password");
+  p.focus();
+  return false;
+}
+alert("Successfully Login");
+return true;
+}
+</script>

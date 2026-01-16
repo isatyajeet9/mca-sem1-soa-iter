@@ -1,0 +1,20 @@
+package com.a5;
+
+import java.util.Scanner;
+
+class Q6_PowerRecursion {
+    static int power(int x, int n) {
+        if (n == 0)
+            return 1;
+        return x * power(x, n - 1);
+    }
+
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.print("Enter x: ");
+        int x = obj.nextInt();
+        System.out.print("Enter n: ");
+        int n = obj.nextInt();
+        System.out.println(power(x, n));
+    }
+}

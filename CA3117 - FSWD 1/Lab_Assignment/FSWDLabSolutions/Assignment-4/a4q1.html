@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: rgb(248, 243, 243)">
+    <form>
+      <h1>Application Form</h1>
+      <label for="name">Name<sup>*:</sup></label>
+      <input type="text" /><br /><br />
+      <label for="father">Father's Name<sup>*</sup>: </label>
+      <input type="text" /><br /><br />
+      <label for="mother">Mother's Name<sup>*</sup>: </label>
+      <input type="text" /><br /><br />
+      <label for="DOB">Date Of Birth<sup>*</sup>: </label>
+      <input type="date" /><br /><br />
+      <label for="Gender">Gender<sup>*</sup>: </label>
+      <select>
+        <option value="" disabled selected>Choose Gender</option>
+        <option value="male" name="gender">Male</option>
+        <option value="female" name="gender">Female</option>
+        <option value="Others" name="gender">Others</option></select
+      ><br /><br />
+      <label for="caste">Caste<sup>*</sup>: </label>
+      <select>
+        <option value="" disabled selected>Choose Caste</option>
+        <option value="General" name="caste">General</option>
+        <option value="OBC/SEBC" name="caste">OBC/SEBC</option>
+        <option value="ST/SC" name="caste">ST/SC</option></select
+      ><br /><br />
+      <label for="add">Address<sup>*</sup>: </label><br />
+      <textarea name="Address" id="add"></textarea><br />
+      <label for="mobile">Mobile No<sup>*</sup>: </label>
+      <select>
+        <option value="" disabled selected>Country Code</option>
+        <option value="+91" name="caste">+91 (Ind)</option>
+        <option value="+1" name="caste">+1 (USA)</option>
+        <option value="+66" name="caste">+66 (TH)</option>
+      </select>
+      <input type="tel" name="mobile" />
+      <br />
+      <label for="img">Your Image:</label><br />
+      <img src="yourimage.png" alt="Your Image" height="150px" />
+      <br /><br /><label for="file">Choose file(s)to upload<sup>*</sup>:</label
+      ><br />
+      <input type="file" name="file" /><br /><br />
+      <label for="t&c">Terms & Condition<sup>*</sup>:</label><br />
+      <input type="checkbox" name="t&c" />I am a student of iter college. <br />
+      <input type="checkbox" name="t&c" />I did my (10+2) by securing atleast
+      60%. <br /><br />
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>

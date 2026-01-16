@@ -1,0 +1,13 @@
+<p id="demo">Hello</p>
+<p class="cls">Paragraph 1</p>
+<p class="cls">Paragraph 2</p>
+
+<script>
+document.getElementById("demo").innerHTML = "Changed by ID";
+
+let c = document.getElementsByClassName("cls");
+c[0].innerText = "Changed by Class";
+
+let t = document.getElementsByTagName("p");
+t[2].style.color = "red";
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Most Significant Number</title>
+  </head>
+  <body>
+    <script>
+      function q6() {
+        let n1 = Number(prompt("Enter number 1"));
+        let n2 = Number(prompt("Enter number 2"));
+        let n3 = Number(prompt("Enter number 3"));
+
+        if (n1 < 10 || n2 < 10 || n3 < 10) {
+          alert("Please enter numbers with 2 digits or more");
+        } else {
+          let max = n1;
+          if (n2 > max) 
+          max = n2;
+          if (n3 > max) 
+          max = n3;
+          document.write("Largest number is " + max);
+        }
+      }
+       q6();
+    </script>
+  </body>
+</html>

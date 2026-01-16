@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bulb On Off</title>
+</head>
+<body>
+
+    <h2>Bulb Toggle</h2>
+
+    <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" width="100">
+
+    <br><br>
+
+    <button id="status" onclick="toggleBulb()">On Me</button>
+
+    <script>
+        let bulbOn = false;
+
+        function toggleBulb() {
+            let bulb = document.getElementById("bulb");
+            let btn = document.getElementById("status");
+
+            if (bulbOn === false) {
+                bulb.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+                btn.innerText = "Off Me";
+                bulbOn = true;
+            } else {
+                bulb.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+                btn.innerText = "On Me";
+                bulbOn = false;
+            }
+        }
+    </script>
+
+</body>
+</html>

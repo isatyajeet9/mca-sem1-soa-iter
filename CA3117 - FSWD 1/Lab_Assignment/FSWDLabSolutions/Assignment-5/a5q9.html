@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Number</title>
+</head>
+<body>
+    <script>
+          function q9() {
+            function findFactorial(n) {
+                let fact = 1;
+                for (let i = 1; i <= n; i++) {
+                    fact = fact * i;
+                }
+                return fact;
+            }
+            let num = Number(prompt("Enter number for factorial"));
+            alert("Factorial is: " + findFactorial(num));
+        }
+        q9();
+    </script>
+</body>
+</html>

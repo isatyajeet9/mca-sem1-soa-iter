@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEachArray</title>
+</head>
+<body>
+    <script>
+         function q10() {
+            let arr = [];
+            let size = Number(prompt("Enter the number of Elements"));
+
+            for (let i = 0; i < size; i++) {
+                let val = prompt("Enter value for index " + i);
+                arr.push(val);
+            }
+
+            document.write("<b>Array Items:</b><br>");
+            arr.forEach(function(item) {
+                document.write(item + "<br>");
+            });
+        }
+
+        q10();
+    </script>
+</body>
+</html>

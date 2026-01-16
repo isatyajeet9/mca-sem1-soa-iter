@@ -1,0 +1,23 @@
+<form onsubmit="return validate()">
+Username: <input type="text" id="u"><br>
+Password: <input type="password" id="p"><br>
+<input type="submit" value="Login">
+</form>
+
+<script>
+function validate() {
+  if (u.value == "") {
+    alert("Enter Username");
+    u.focus();
+    return false;
+  }
+  if (p.value == "") {
+    alert("Enter Password");
+    p.focus();
+    return false;
+  }
+  alert("Successfully Login");
+  window.location = "a6q7.html";
+  return false;
+}
+</script>
